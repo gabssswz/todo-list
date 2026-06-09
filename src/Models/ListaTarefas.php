@@ -2,6 +2,8 @@
 
 declare(strict_types = 1);
 require_once 'Tarefa.php';
+require_once 'Usuario.php';
+
     class ListaTarefa {
         public array $tarefas;
         public array $usuarios;
@@ -15,7 +17,6 @@ require_once 'Tarefa.php';
             for( $i = 0; $i < count($this->tarefas); $i++ ) {
                 echo 'Suas tarefas sao: ' . $this->tarefas[$i] . PHP_EOL;
         }
-
         }
     }
 
