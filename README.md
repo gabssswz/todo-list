@@ -131,7 +131,7 @@ Aplicar os principais conceitos de Programação Orientada a Objetos em PHP por 
 Gabriel Silva de Souza Claro  \
 Gabriel Assis Costa de Souza  \
 Juan Vincentini Cordovil  \
-Luis Felipe de Oliveira Brasil  \
+Luis Felipe de Oliveira Brasil
 
 ---
 
