@@ -48,7 +48,7 @@ class Tarefa {
     }
 
     public function concluir(): void {
-        $this->concluir = true;
+        $this->concluida = true;
     }
 
     public function exibirDetalhes(): void {
