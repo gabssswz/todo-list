@@ -4,27 +4,14 @@ declare(strict_types=1);
 
 class Usuario {
     private string $nome;
-    private string $listadecategorias;
+    private array $categoria;
 
-    function __construct(string $nome, string $listadecategorias) {
+    function __construct(string $nome) {
         $this->nome = $nome;
-        $this->listadecategorias = $listadecategorias;
     }
 
     public function getNome(): string {
         return $this->nome;
-    }
-
-    public function setNome(string $nome): void {
-        $this->nome = $nome;
-    }
-
-    public function getListadecategorias(): string {
-        return $this->listadecategorias;
-    }
-
-    public function setListadecategorias(string $listadecategorias): void {
-        $this->listadecategorias = $listadecategorias;
     }
 
     public function adicionarCategoria(string $adicionar): void {
@@ -32,11 +19,11 @@ class Usuario {
     }
 
     public function removerCategoria(string $remover): void {
-
+        $this->remover = $remover;
     }
 
     public function listarCategoria(): void {
-        
+        $this->listarcategoria = $listarcategoria;
     }
     
 }
