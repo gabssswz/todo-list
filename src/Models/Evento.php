@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-class Evento {
+require_once 'src/Interfaces/Exibir.php';
+
+class Evento implements Exibivel {
     private string $nome;
     private string $data;
 
@@ -20,8 +22,12 @@ class Evento {
     }
 
     public function exibirDetalhes(): void {
-        echo 'Nome: ' . $this->nome;
-        echo 'data: ' . $this->data;
+        echo 'Nome: ' . $this->nome . PHP_EOL;
+        echo 'Data: ' . $this->data . PHP_EOL;
+    }
+
+    public function listar(): void {
+        $this->exibirDetalhes();
     }
 
 }

@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-class Tarefa {
+require_once 'src/Interfaces/Exibir.php';
+
+class Tarefa implements Exibivel {
     private string $titulo;
     private string $descricao;
     private bool $concluida;
@@ -52,9 +54,13 @@ class Tarefa {
     }
 
     public function exibirDetalhes(): void {
-        echo 'Titulo: ' . $this->titulo;
-        echo 'Descrição: ' . $this->descricao;
-        echo 'Categoria: ' . $this->categoria;
-        echo 'Concluida: ' . $this->concluida;
+        echo 'Titulo: ' . $this->titulo . PHP_EOL;
+        echo 'Descrição: ' . $this->descricao . PHP_EOL;
+        echo 'Categoria: ' . $this->categoria . PHP_EOL;
+        echo 'Concluida: ' . ($this->concluida ? 'Sim' : 'Não') . PHP_EOL;
+    }
+
+    public function listar(): void {
+        $this->exibirDetalhes();
     }
 }
