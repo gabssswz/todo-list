@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require_once 'src/Interfaces/Exibir.php';
+require_once __DIR__ . '/../Interfaces/Exibir.php';
 
 class Tarefa implements Exibivel {
     private string $titulo;

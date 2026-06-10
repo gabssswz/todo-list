@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require_once("src/Models/Tarefa.php");
+require_once __DIR__ . "/Models/Tarefa.php";
 
 $tarefas = [];
 
